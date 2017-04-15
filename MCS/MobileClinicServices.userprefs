@@ -1,0 +1,21 @@
+﻿<Properties StartupConfiguration="{1702DE90-2C1D-4825-BFCC-4B43FB55802F}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/SignUpViewController.cs">
+    <Files>
+      <File FileName="iOS/SignUpViewController.cs" Line="43" Column="6" />
+      <File FileName="iOS/MainMenuViewController.cs" Line="51" Column="5" />
+      <File FileName="iOS/ViewController.cs" Line="99" Column="3" />
+      <File FileName="iOS/Main.storyboard" />
+      <File FileName="iOS/EditProfileViewController.cs" Line="19" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/michaelbi/Desktop/MobileClinicMUI/MobileClinicServices/iOS/EditProfileViewController.cs" relfile="iOS/EditProfileViewController.cs" line="19" column="1" />
+      <Breakpoint file="/Users/michaelbi/Desktop/MobileClinicMUI/MobileClinicServices/iOS/MainMenuViewController.cs" relfile="iOS/MainMenuViewController.cs" line="44" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.MobileClinicServices.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.5D4DCEFA-0B27-4E7B-BB89-156E8BD555D7" />
+</Properties>
