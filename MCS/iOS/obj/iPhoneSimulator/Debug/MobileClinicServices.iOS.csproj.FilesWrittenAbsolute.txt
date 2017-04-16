@@ -32,3 +32,15 @@
 /Users/michaelbi/Desktop/MobileClinicMUI/MobileClinicServices/iOS/bin/iPhoneSimulator/Debug/Newtonsoft.Json.dll
 /Users/michaelbi/Desktop/MobileClinicMUI/MobileClinicServices/iOS/bin/iPhoneSimulator/Debug/MobileClinicServices.dll
 /Users/michaelbi/Desktop/MobileClinicMUI/MobileClinicServices/iOS/bin/iPhoneSimulator/Debug/MobileClinicServices.dll.mdb
+/Users/michaelbi/Desktop/MobileClinicMUI/MCS/iOS/obj/iPhoneSimulator/Debug/Xamarin.iOS,Version=v1.0.AssemblyAttribute.cs
+/Users/michaelbi/Desktop/MobileClinicMUI/MCS/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone8.1-10.3/optimized/Start.png
+/Users/michaelbi/Desktop/MobileClinicMUI/MCS/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone8.1-10.3/optimized/logo.png
+/Users/michaelbi/Desktop/MobileClinicMUI/MCS/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone8.1-10.3/optimized/back.png
+/Users/michaelbi/Desktop/MobileClinicMUI/MCS/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone8.1-10.3/optimized/
+/Users/michaelbi/Desktop/MobileClinicMUI/MCS/iOS/bin/iPhoneSimulator/Debug/MobileClinicServices.iOS.exe.mdb
+/Users/michaelbi/Desktop/MobileClinicMUI/MCS/iOS/bin/iPhoneSimulator/Debug/MobileClinicServices.iOS.exe
+/Users/michaelbi/Desktop/MobileClinicMUI/MCS/iOS/obj/iPhoneSimulator/Debug/MobileClinicServices.iOS.exe
+/Users/michaelbi/Desktop/MobileClinicMUI/MCS/iOS/obj/iPhoneSimulator/Debug/MobileClinicServices.iOS.exe.mdb
+/Users/michaelbi/Desktop/MobileClinicMUI/MCS/iOS/bin/iPhoneSimulator/Debug/Newtonsoft.Json.dll
+/Users/michaelbi/Desktop/MobileClinicMUI/MCS/iOS/bin/iPhoneSimulator/Debug/MobileClinicServices.dll
+/Users/michaelbi/Desktop/MobileClinicMUI/MCS/iOS/bin/iPhoneSimulator/Debug/MobileClinicServices.dll.mdb

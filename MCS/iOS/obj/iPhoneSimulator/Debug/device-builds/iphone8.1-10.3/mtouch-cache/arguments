@@ -2,9 +2,9 @@
 # [first argument, ignore] # /Library/Frameworks/Xamarin.iOS.framework/Versions/10.8.0.175/lib/mtouch/mtouch.exe
 /Library/Frameworks/Xamarin.iOS.framework/Versions/10.8.0.175/lib/mtouch/mtouch.exe \
 	--cache \
-	/Users/michaelbi/Projects/MobileClinicServices/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone8.1-10.3/mtouch-cache \
+	/Users/michaelbi/Desktop/MobileClinicMUI/MCS/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone8.1-10.3/mtouch-cache \
 	--sim \
-	/Users/michaelbi/Projects/MobileClinicServices/iOS/bin/iPhoneSimulator/Debug/device-builds/iphone8.1-10.3/MobileClinicServices.iOS.app \
+	/Users/michaelbi/Desktop/MobileClinicMUI/MCS/iOS/bin/iPhoneSimulator/Debug/device-builds/iphone8.1-10.3/MobileClinicServices.iOS.app \
 	--executable \
 	MobileClinicServices.iOS \
 	--fastdev \
@@ -19,7 +19,7 @@
 	--http-message-handler=HttpClientHandler \
 	--abi=x86_64 \
 	--symbollist \
-	/Users/michaelbi/Projects/MobileClinicServices/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone8.1-10.3/mtouch-symbols.list \
+	/Users/michaelbi/Desktop/MobileClinicMUI/MCS/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone8.1-10.3/mtouch-symbols.list \
 	--dsym=no \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.dll \
@@ -32,9 +32,9 @@
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Microsoft.CSharp.dll \
 	-r \
-	/Users/michaelbi/Projects/MobileClinicServices/packages/Newtonsoft.Json.10.0.1/lib/netstandard1.3/Newtonsoft.Json.dll \
+	/Users/michaelbi/Desktop/MobileClinicMUI/MCS/packages/Newtonsoft.Json.10.0.1/lib/netstandard1.3/Newtonsoft.Json.dll \
 	-r \
-	/Users/michaelbi/Projects/MobileClinicServices/MobileClinicServices/bin/Debug/MobileClinicServices.dll \
+	/Users/michaelbi/Desktop/MobileClinicMUI/MCS/MobileClinicServices/bin/Debug/MobileClinicServices.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll \
 	-r \
@@ -300,9 +300,9 @@
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Xml.Xsl.Primitives.dll \
 	-r \
-	/Users/michaelbi/Projects/MobileClinicServices/packages/Newtonsoft.Json.10.0.1/lib/netstandard1.3/Newtonsoft.Json.dll \
+	/Users/michaelbi/Desktop/MobileClinicMUI/MCS/packages/Newtonsoft.Json.10.0.1/lib/netstandard1.3/Newtonsoft.Json.dll \
 	-r \
-	/Users/michaelbi/Projects/MobileClinicServices/MobileClinicServices/bin/Debug/MobileClinicServices.dll \
+	/Users/michaelbi/Desktop/MobileClinicMUI/MCS/MobileClinicServices/bin/Debug/MobileClinicServices.dll \
 	--target-framework \
 	"Xamarin.iOS,v1.0" \
-	/Users/michaelbi/Projects/MobileClinicServices/iOS/bin/iPhoneSimulator/Debug/MobileClinicServices.iOS.exe \
+	/Users/michaelbi/Desktop/MobileClinicMUI/MCS/iOS/bin/iPhoneSimulator/Debug/MobileClinicServices.iOS.exe \

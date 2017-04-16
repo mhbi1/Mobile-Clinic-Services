@@ -39,10 +39,6 @@ namespace MobileClinicServices.iOS
 
 			doneButton.TouchUpInside += (sender, e) =>
 			{
-				/*if (passwordTxtF.Text.Equals(confirmPassTxtF.Text))
-				{
-					NavigationController.PopToRootViewController(animated: true);
-				}*/
 
 			};
 		}
@@ -69,13 +65,13 @@ namespace MobileClinicServices.iOS
 				alert.Show();
 				return false;
 			}
-			/*else if (!System.Text.RegularExpressions.Regex.IsMatch(emailTxtF.Text, "[a-z]{50}@[0-9]{2}-[0-9]{4}"))
+			else if (!System.Text.RegularExpressions.Regex.IsMatch(emailTxtF.Text, @"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$"))
 			{
-				UIAlertView alert = new UIAlertView() { Title = "SSN is not in right format", Message = "Please enter a valid format." };
+				UIAlertView alert = new UIAlertView() { Title = "Email is not in right format", Message = "Please enter a valid format." };
 				alert.AddButton("Ok");
 				alert.Show();
 				return false;
-			}*/
+			}
 			//Checks to see if passwords match
 			else if (passwordTxtF.Text.Equals(confirmPassTxtF.Text))
 			{
