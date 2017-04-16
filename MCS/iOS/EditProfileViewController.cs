@@ -23,7 +23,7 @@ namespace MobileClinicServices.iOS
 			passwordTxtF.Text = editUser.pass;
 			phoneNumTxtF.Text = editUser.num;
 			ssnTxtF.Text = editUser.ssn;
-			dobTxtF.Text = editUser.dob;
+			dobTxtF.Text = editUser.dob.ToString();
 
 			backButton.TouchUpInside += (sender, e) =>
 			{
@@ -66,7 +66,7 @@ namespace MobileClinicServices.iOS
 			editUser.pass = passwordTxtF.Text;
 			editUser.num = phoneNumTxtF.Text;
 			editUser.ssn = ssnTxtF.Text;
-			editUser.dob = dobTxtF.Text;
+			editUser.dob = DateTime.Parse(dobTxtF.Text);
 		}
 
 		/*[Action("UnwindToMainMenu:")]

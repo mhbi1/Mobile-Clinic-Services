@@ -15,7 +15,7 @@ namespace MobileClinicServices.iOS
 		public String cpass { get; set; }
 		public String num { get; set; }
 		public String ssn { get; set; }
-		public String dob { get; set; }
+		public DateTime dob { get; set; }
 
 	}
 	public partial class SignUpViewController : UIViewController
@@ -23,6 +23,7 @@ namespace MobileClinicServices.iOS
 		public String json = "";
 		public userAccount editUser;
 		public bool edit;
+		public DateTime dob;
 
 		public SignUpViewController(IntPtr handle) : base(handle)
 		{
@@ -39,18 +40,24 @@ namespace MobileClinicServices.iOS
 
 			doneButton.TouchUpInside += (sender, e) =>
 			{
-
+				saveInfo();
 			};
 		}
 
 		public override bool ShouldPerformSegue(string segueIdentifier, NSObject sender)
 		{
 			//Checks to see if formats are correct
-			//String ssn = String.Format("{0:###-##-####}", int.Parse(ssnTxtF.Text));
-			//Console.WriteLine(ssn);
-
+		
+			//Checks to see if email has valid format
+			if (!System.Text.RegularExpressions.Regex.IsMatch(emailTxtF.Text, @"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$"))
+			{
+				UIAlertView alert = new UIAlertView() { Title = "Email is not in right format", Message = "Please enter a valid format." };
+				alert.AddButton("Ok");
+				alert.Show();
+				return false;
+			}
 			//Checks to see if phone number has valid format
-			if (!System.Text.RegularExpressions.Regex.IsMatch(phoneNumTxtF.Text, "[0-9]{3}-[0-9]{3}-[0-9]{4}"))
+			else if (!System.Text.RegularExpressions.Regex.IsMatch(phoneNumTxtF.Text, "[0-9]{3}-[0-9]{3}-[0-9]{4}"))
 			{
 				UIAlertView alert = new UIAlertView() { Title = "Phone number is not in right format", Message = "Please enter a valid format." };
 				alert.AddButton("Ok");
@@ -65,15 +72,17 @@ namespace MobileClinicServices.iOS
 				alert.Show();
 				return false;
 			}
-			else if (!System.Text.RegularExpressions.Regex.IsMatch(emailTxtF.Text, @"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$"))
+			//Checks to see if date of birth has valid format
+			else if (!DateTime.TryParse(dobTxtF.Text, out dob))
 			{
-				UIAlertView alert = new UIAlertView() { Title = "Email is not in right format", Message = "Please enter a valid format." };
+				UIAlertView alert = new UIAlertView() { Title = "Date of Birth is not in right format", Message = "Please enter a valid format." };
 				alert.AddButton("Ok");
 				alert.Show();
 				return false;
 			}
+
 			//Checks to see if passwords match
-			else if (passwordTxtF.Text.Equals(confirmPassTxtF.Text))
+			if (passwordTxtF.Text.Equals(confirmPassTxtF.Text))
 			{
 				return true;
 			}
@@ -100,7 +109,7 @@ namespace MobileClinicServices.iOS
 				cpass = confirmPassTxtF.Text,
 				num = phoneNumTxtF.Text,
 				ssn = ssnTxtF.Text,
-				dob = dobTxtF.Text
+				dob = dob
 			};
 			json = JsonConvert.SerializeObject(newUser);
 		}
