@@ -8,7 +8,7 @@
         <!--LogInScreen-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="LogInScreen" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController title="LogInScreen" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController" storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2101"/>
                         <viewControllerLayoutGuide type="bottom" id="2102"/>
@@ -44,7 +44,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue id="3870" destination="27" kind="show" identifier="toMainMenu"/>
+                                    <segue id="3870" destination="27" kind="showDetail" identifier="toMainMenu"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="16">
@@ -68,7 +68,7 @@
                                     </mask>
                                 </variation>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="17">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="17" clearsOnBeginEditing="YES">
                                 <rect key="frame" x="107" y="353" width="162" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="2367"/>
@@ -227,7 +227,7 @@
         <!--MainMenuScreen-->
         <scene sceneID="26">
             <objects>
-                <viewController title="MainMenuScreen" id="27" customClass="MainMenuViewController" sceneMemberID="viewController">
+                <viewController title="MainMenuScreen" id="27" customClass="MainMenuViewController" sceneMemberID="viewController" storyboardIdentifier="MainMenuViewController" useStoryboardIdentifierAsRestorationIdentifier="YES">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2103"/>
                         <viewControllerLayoutGuide type="bottom" id="2104"/>
@@ -276,6 +276,9 @@
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue id="4134" destination="4069" kind="unwind" unwindAction="UnwindToLogIn:" identifier="mainMenuToLogin"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.4392156862745098" green="0.6705882352941176" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
@@ -291,13 +294,14 @@
                     <navigationItem title="Title" id="3440" key="navigationItem"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="29" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="4069" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="509" y="-535"/>
         </scene>
         <!--SignUpScreen-->
         <scene sceneID="45">
             <objects>
-                <viewController title="SignUpScreen" id="46" customClass="SignUpViewController" sceneMemberID="viewController">
+                <viewController title="SignUpScreen" id="46" customClass="SignUpViewController" sceneMemberID="viewController" storyboardIdentifier="SignUpViewController" useStoryboardIdentifierAsRestorationIdentifier="YES">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2105"/>
                         <viewControllerLayoutGuide type="bottom" id="2106"/>
@@ -324,7 +328,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="2836" kind="unwind" unwindAction="UnwindToLogIn:" id="3004"/>
+                                            <segue destination="2836" kind="unwind" unwindAction="UnwindToLogIn:" id="3004" identifier="signupToLogin"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69">
@@ -495,7 +499,7 @@
         </scene>
         <scene sceneID="3920">
             <objects>
-                <viewController title="EditProfileScreen" id="3921" customClass="EditProfileViewController" sceneMemberID="viewController">
+                <viewController title="EditProfileScreen" id="3921" customClass="EditProfileViewController" sceneMemberID="viewController" storyboardIdentifier="EditProfileViewController" useStoryboardIdentifierAsRestorationIdentifier="YES">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3970"/>
                         <viewControllerLayoutGuide type="bottom" id="3971"/>
@@ -677,6 +681,7 @@
                         <outlet property="ssnTxtF" destination="3968" id="name-outlet-3968"/>
                         <outlet property="dobTxtF" destination="3969" id="name-outlet-3969"/>
                         <outlet property="doneButton" destination="3948" id="name-outlet-3948"/>
+                        <segue id="4124" destination="3973" kind="unwind" unwindAction="UnwindToMainMenu:" identifier="backToMM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3972" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -23,23 +23,28 @@ namespace MobileClinicServices.iOS
 			passwordTxtF.Text = editUser.pass;
 			phoneNumTxtF.Text = editUser.num;
 			ssnTxtF.Text = editUser.ssn;
-			dobTxtF.Text = editUser.dob.ToString();
+			dobTxtF.Text = editUser.dob.Date.ToString("MM/dd/yyyy");
 
 			backButton.TouchUpInside += (sender, e) =>
 			{
-				NavigationController.PopViewController(animated: true);
+				this.DismissViewController(true, null);
 			};
-
 			doneButton.TouchUpInside += (sender, e) =>
 			{
 				if (passwordTxtF.Text.Equals(confirmPassTxtF.Text))
 				{
-					NavigationController.PopToRootViewController(animated: true);
+	                PerformSegue("backToMM", this);
 				}
+	 			else
+				{
+					UIAlertView alert = new UIAlertView() { Title = "Passwords do not match", Message = "Please try again." };
+					alert.AddButton("Ok");
+					alert.Show();
+				}	
 			};
 		}
 
-		public override bool ShouldPerformSegue(string segueIdentifier, NSObject sender)
+	/*	public override bool ShouldPerformSegue(string segueIdentifier, NSObject sender)
 		{
 			//Checks to see if passwords match
 			if (passwordTxtF.Text.Equals(confirmPassTxtF.Text))
@@ -54,7 +59,7 @@ namespace MobileClinicServices.iOS
 				return false;
 			}
 			//return base.ShouldPerformSegue(segueIdentifier, sender);	}
-		}
+		}*/
 
 		public void saveInfo()
 		{

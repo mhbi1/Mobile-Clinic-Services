@@ -18,39 +18,36 @@ namespace MobileClinicServices.iOS
 			base.ViewDidLoad();
 			// Perform any additional setup after loading the view, typically from a nib.
 
-			logoutButton.TouchUpInside += (sender, e) =>{
-				NavigationController.PopToRootViewController(animated: true);
-			};
-			profileButton.TouchUpInside += (sender, e) =>{
-				PerformSegue("toEdit", this);
-			};
+
 
 		}
 
-		public override bool ShouldPerformSegue(string segueIdentifier, NSObject sender)
+		/*public override bool ShouldPerformSegue(string segueIdentifier, NSObject sender)
 		{
-			if (segueIdentifier.Equals("toProfile"))
+			if (segueIdentifier.Equals("toEdit"))
 			{
 				return true;
 			}
 			return base.ShouldPerformSegue(segueIdentifier, sender);
-		}
+		}*/
 
 	
-		public void prepareForSegue(UIStoryboardSegue segue, NSObject sender)
+		public override void PrepareForSegue(UIStoryboardSegue segue, NSObject sender)
 		{
+			base.PrepareForSegue(segue, sender);
+
 			if (segue.Identifier.Equals("toEdit"))
 			{
-				var editVC = segue.DestinationViewController as SignUpViewController;
+				var editVC = segue.DestinationViewController as EditProfileViewController;
 				editVC.editUser = currentUser;
-				editVC.edit = true;
 			}
 		}
 
 		[Action("UnwindToMainMenu:")]
 		public void UnwindToMainMenu(UIStoryboardSegue segue)
 		{
-			var signup = (SignUpViewController)segue.SourceViewController;
+			
+			var signup = (EditProfileViewController)segue.SourceViewController;
 			//deserialize
 			signup.saveInfo();		
 		}

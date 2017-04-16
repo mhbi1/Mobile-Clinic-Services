@@ -9,9 +9,7 @@ namespace MobileClinicServices.iOS
 	public partial class ViewController : UIViewController
 	{
 		public static List<userAccount> userData = new List<userAccount>();
-		int currentUser;
-		String username = "";
-		String password = "";
+		int u;
 		bool correctLogin = false;
 
 		public ViewController(IntPtr handle) : base(handle)
@@ -41,6 +39,14 @@ namespace MobileClinicServices.iOS
 				passwordTxtF.ResignFirstResponder();
 				return true;
 			};
+
+			loginButton.TouchUpInside += (sender, e) =>{
+				passwordTxtF.Text = "";
+				if (correctLogin)
+				{
+					PerformSegue("toMainMenu", this);
+				}
+			};
 		}
 
 		public override void DidReceiveMemoryWarning()
@@ -53,21 +59,8 @@ namespace MobileClinicServices.iOS
 		{
 			if (segueIdentifier.Equals("toMainMenu"))
 			{
-				//Do I need this?
-				if (correctLogin)
-				{
-					username = this.usernameTxtF.Text;
-					password = this.passwordTxtF.Text;
-					if (loginCorrect(username, password))
-					{
-
-					}
-				}
-				else    //Checks to see if fields are blank or incorrect
-				{
-					checkLogin();
-					return (correctLogin ? true : false);
-				}
+				checkLogin();
+				return (correctLogin ? true : false);
 			}
 			return base.ShouldPerformSegue(segueIdentifier, sender);
 		}
@@ -75,25 +68,31 @@ namespace MobileClinicServices.iOS
 		[Action("UnwindToLogIn:")]
 		public void UnwindToLogIn (UIStoryboardSegue segue)
 		{
-			var signup = (SignUpViewController)segue.SourceViewController;
-			//deserialize
-			signup.saveInfo();
-			//IMPLEMENTATION: send json to database
-			//TESTING: adds user to userData
-			userAccount tempUser = JsonConvert.DeserializeObject<userAccount>(signup.json);
-			userData.Add(tempUser);
-
 			//Textfields are initialized blank
 			usernameTxtF.Text = "";
 			passwordTxtF.Text = "";
+
+			if (segue.Identifier.Equals("signupToLogin"))
+			{
+				var signup = (SignUpViewController)segue.SourceViewController;
+				//deserialize
+				signup.saveInfo();
+				//IMPLEMENTATION: send json to database
+				//TESTING: adds user to userData
+				userAccount tempUser = JsonConvert.DeserializeObject<userAccount>(signup.json);
+				userData.Add(tempUser);
+			}
+
 		}
 
-		public void prepareForSegue(UIStoryboardSegue segue, NSObject sender)
+		public override void PrepareForSegue(UIStoryboardSegue segue, NSObject sender)
 		{
+			base.PrepareForSegue(segue, sender);
+
 			if (segue.Identifier.Equals("toMainMenu"))
 			{
 				var mmVC = segue.DestinationViewController as MainMenuViewController;
-				mmVC.currentUser = userData[currentUser];
+				mmVC.currentUser = userData[u];
 			}
 		}
 
@@ -105,7 +104,7 @@ namespace MobileClinicServices.iOS
 			{
 				if (user.email.Equals(username) && user.pass.Equals(pass))
 				{
-					currentUser = userData.IndexOf(user);
+					u = userData.IndexOf(user);
 					return true;
 				}
 				else { return false;}
@@ -120,18 +119,21 @@ namespace MobileClinicServices.iOS
 				UIAlertView alert = new UIAlertView() { Title = "Username is blank", Message = "Please enter a username." };
 				alert.AddButton("Ok");
 				alert.Show();
+				correctLogin = false;
 			}
 			else if (passwordTxtF.HasText == false)
 			{
 				UIAlertView alert = new UIAlertView() { Title = "Password is blank", Message = "Please enter a password." };
 				alert.AddButton("Ok");
 				alert.Show();
+				correctLogin = false;
 			}
 			else if (loginCorrect(usernameTxtF.Text, passwordTxtF.Text) == false)
 			{
 				UIAlertView alert = new UIAlertView() { Title = "Username/password is incorrect", Message = "Please try again." };
 				alert.AddButton("Ok");
 				alert.Show();
+				correctLogin = false;
 			}
 			else
 			{
