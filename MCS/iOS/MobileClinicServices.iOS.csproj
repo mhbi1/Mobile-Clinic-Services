@@ -98,6 +98,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="Resources\Images.xcassets\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -129,11 +130,55 @@
     <Compile Include="EditProfileViewController.designer.cs">
       <DependentUpon>EditProfileViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChatScreenViewController.cs" />
+    <Compile Include="ChatScreenViewController.designer.cs">
+      <DependentUpon>ChatScreenViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BubbleCell.cs" />
+    <Compile Include="IncomingCell.cs" />
+    <Compile Include="OutgoingCell.cs" />
+    <Compile Include="Message.cs" />
+    <Compile Include="MessageType.cs" />
+    <Compile Include="ChatInputView.cs" />
+    <Compile Include="ChatSource.cs" />
+    <Compile Include="OutgoingCell.designer.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Start.png" />
     <BundleResource Include="Resources\logo.png" />
     <BundleResource Include="Resources\back.png" />
+    <BundleResource Include="Resources\LaunchImage.launchimage\Contents.json" />
+    <BundleResource Include="Resources\LaunchImage.launchimage\Default-568h%402x.png" />
+    <BundleResource Include="Resources\LaunchImage.launchimage\Default-Landscape%402x~ipad.png" />
+    <BundleResource Include="Resources\LaunchImage.launchimage\Default-Landscape~ipad.png" />
+    <BundleResource Include="Resources\LaunchImage.launchimage\Default-Portrait%402x~ipad.png" />
+    <BundleResource Include="Resources\LaunchImage.launchimage\Default-Portrait~ipad.png" />
+    <BundleResource Include="Resources\LaunchImage.launchimage\Default.png" />
+    <BundleResource Include="Resources\LaunchImage.launchimage\Default%402x.png" />
+    <BundleResource Include="Resources\BubbleOutgoing.imageset\Contents.json" />
+    <BundleResource Include="Resources\BubbleOutgoing.imageset\bubble_regular.png" />
+    <BundleResource Include="Resources\BubbleOutgoing.imageset\bubble_regular%402x.png" />
+    <BundleResource Include="Resources\BubbleOutgoing.imageset\bubble_regular%403x.png" />
+    <BundleResource Include="Resources\BubbleIncoming.imageset\Contents.json" />
+    <BundleResource Include="Resources\BubbleIncoming.imageset\bubble_regular.png" />
+    <BundleResource Include="Resources\BubbleIncoming.imageset\bubble_regular%402x.png" />
+    <BundleResource Include="Resources\BubbleIncoming.imageset\bubble_regular%403x.png" />
+    <BundleResource Include="Resources\AppIcon.appiconset\Contents.json" />
+    <BundleResource Include="Resources\AppIcon.appiconset\Icon-60%402x.png" />
+    <BundleResource Include="Resources\AppIcon.appiconset\Icon-60%403x.png" />
+    <BundleResource Include="Resources\AppIcon.appiconset\Icon-72.png" />
+    <BundleResource Include="Resources\AppIcon.appiconset\Icon-72%402x.png" />
+    <BundleResource Include="Resources\AppIcon.appiconset\Icon-76.png" />
+    <BundleResource Include="Resources\AppIcon.appiconset\Icon-76%402x.png" />
+    <BundleResource Include="Resources\AppIcon.appiconset\Icon-87%403x.png" />
+    <BundleResource Include="Resources\AppIcon.appiconset\Icon-Small-50.png" />
+    <BundleResource Include="Resources\AppIcon.appiconset\Icon-Small-50%402x.png" />
+    <BundleResource Include="Resources\AppIcon.appiconset\Icon-Small.png" />
+    <BundleResource Include="Resources\AppIcon.appiconset\Icon-Small%402x.png" />
+    <BundleResource Include="Resources\AppIcon.appiconset\Icon-Spotlight-40.png" />
+    <BundleResource Include="Resources\AppIcon.appiconset\Icon-Spotlight-40%402x.png" />
+    <BundleResource Include="Resources\AppIcon.appiconset\Icon.png" />
+    <BundleResource Include="Resources\AppIcon.appiconset\Icon%402x.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

@@ -29,12 +29,20 @@
       <LogicalName>Main.storyboardc/3921-view-3945.nib</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/device-builds/iphone8.1-10.3/ibtool-link/Main.storyboardc/4142-view-4143.nib">
+      <LogicalName>Main.storyboardc/4142-view-4143.nib</LogicalName>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
     <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/device-builds/iphone8.1-10.3/ibtool-link/Main.storyboardc/46-view-47.nib">
       <LogicalName>Main.storyboardc/46-view-47.nib</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
     <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/device-builds/iphone8.1-10.3/ibtool-link/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib">
       <LogicalName>Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</LogicalName>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/device-builds/iphone8.1-10.3/ibtool-link/Main.storyboardc/ChatScreenViewController.nib">
+      <LogicalName>Main.storyboardc/ChatScreenViewController.nib</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
     <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/device-builds/iphone8.1-10.3/ibtool-link/Main.storyboardc/EditProfileViewController.nib">
