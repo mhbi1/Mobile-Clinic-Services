@@ -47,11 +47,19 @@ namespace MobileClinicServices.iOS
 		public override bool ShouldPerformSegue(string segueIdentifier, NSObject sender)
 		{
 			//Checks to see if formats are correct
-		
+
 			//Checks to see if email has valid format
 			if (!System.Text.RegularExpressions.Regex.IsMatch(emailTxtF.Text, @"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$"))
 			{
 				UIAlertView alert = new UIAlertView() { Title = "Email is not in right format", Message = "Please enter a valid format." };
+				alert.AddButton("Ok");
+				alert.Show();
+				return false;
+			}
+			//Checks to see if passwords are blank
+			else if (!passwordTxtF.HasText)
+			{
+				UIAlertView alert = new UIAlertView() { Title = "Password field is empty", Message = "Please enter a password." };
 				alert.AddButton("Ok");
 				alert.Show();
 				return false;
