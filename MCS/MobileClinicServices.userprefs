@@ -1,17 +1,22 @@
 ﻿<Properties StartupConfiguration="{1702DE90-2C1D-4825-BFCC-4B43FB55802F}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/IncomingCell.cs">
     <Files>
       <File FileName="iOS/SignUpViewController.cs" Line="62" Column="114" />
       <File FileName="iOS/ViewController.cs" Line="46" Column="6" />
       <File FileName="iOS/MainMenuViewController.cs" Line="53" Column="1" />
-      <File FileName="iOS/ChatScreenViewController.cs" Line="117" Column="1" />
+      <File FileName="iOS/ChatScreenViewController.cs" Line="101" Column="1" />
       <File FileName="iOS/Main.storyboard" />
-      <File FileName="iOS/Info.plist" />
+      <File FileName="iOS/BubbleCell.cs" Line="74" Column="1" />
+      <File FileName="iOS/OutgoingCell.cs" Line="1" Column="1" />
+      <File FileName="iOS/IncomingCell.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/michaelbi/Desktop/MobileClinicMUI/MCS/iOS/ChatScreenViewController.cs" relfile="iOS/ChatScreenViewController.cs" line="101" column="1" />
+      <Breakpoint file="/Users/michaelbi/Desktop/MobileClinicMUI/MCS/iOS/OutgoingCell.cs" relfile="iOS/OutgoingCell.cs" line="19" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />

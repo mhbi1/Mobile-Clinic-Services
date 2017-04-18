@@ -26,6 +26,7 @@
 			<string>/Users/michaelbi/Desktop/MobileClinicMUI/MCS/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone8.1-10.3/actool/bundle/AppIcon76x76~ipad.png</string>
 			<string>/Users/michaelbi/Desktop/MobileClinicMUI/MCS/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone8.1-10.3/actool/bundle/AppIcon76x76@2x~ipad.png</string>
 			<string>/Users/michaelbi/Desktop/MobileClinicMUI/MCS/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone8.1-10.3/actool/bundle/AppIcon83.5x83.5@2x~ipad.png</string>
+			<string>/Users/michaelbi/Desktop/MobileClinicMUI/MCS/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone8.1-10.3/actool/bundle/Assets.car</string>
 			<string>/Users/michaelbi/Desktop/MobileClinicMUI/MCS/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone8.1-10.3/actool/partial-info.plist</string>
 		</array>
 	</dict>
@@ -109,6 +110,30 @@
 		<dict>
 			<key>affected-items</key>
 			<array>
+				<string>./AppIcon.appiconset</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/michaelbi/Desktop/MobileClinicMUI/MCS/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone8.1-10.3/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The app icon set name "AppIcon" is used by multiple app icon sets.</string>
+			<key>type</key>
+			<string>Conflicting Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./AppIcon.appiconset</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/michaelbi/Desktop/MobileClinicMUI/MCS/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone8.1-10.3/actool/cloned-assets/Resources/Images.xcassets</string>
+			<key>message</key>
+			<string>The app icon set name "AppIcon" is used by multiple app icon sets.</string>
+			<key>type</key>
+			<string>Conflicting Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
 				<string>./AppIcon.appiconset/(null)[2d][Icon-App-20x20@1x.png]</string>
 				<string>./AppIcon.appiconset/(null)[2d][Icon-App-20x20@2x.png]</string>
 				<string>./AppIcon.appiconset/(null)[2d][Icon-App-20x20@3x.png]</string>
@@ -119,6 +144,18 @@
 			<string>/Users/michaelbi/Desktop/MobileClinicMUI/MCS/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone8.1-10.3/actool/cloned-assets/Assets.xcassets</string>
 			<key>message</key>
 			<string>The app icon set "AppIcon" has 5 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./AppIcon.appiconset/[][car][][][][1x][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/michaelbi/Desktop/MobileClinicMUI/MCS/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone8.1-10.3/actool/cloned-assets/Resources/Images.xcassets</string>
+			<key>message</key>
+			<string>The app icon set "AppIcon" has an unassigned child.</string>
 			<key>type</key>
 			<string>Ambiguous Content</string>
 		</dict>

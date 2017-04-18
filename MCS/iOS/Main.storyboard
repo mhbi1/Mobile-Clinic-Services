@@ -766,6 +766,8 @@
         <image name="AppIcon.appiconset/Icon-App-76x76.png" width="76" height="76"/>
         <image name="AppIcon.appiconset/Icon-App-83.5x83.5.png" width="83.5" height="83.5"/>
         <image name="AppIcon.appiconset/Icon-Small-50x50.png" width="50" height="50"/>
+        <image name="BubbleIncoming" width="56" height="35"/>
+        <image name="BubbleOutgoing" width="56" height="35"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedScreenMetrics key="destination" type="retina47"/>

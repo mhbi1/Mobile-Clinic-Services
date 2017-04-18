@@ -81,5 +81,9 @@
       <LogicalName>AppIcon83.5x83.5@2x~ipad.png</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/device-builds/iphone8.1-10.3/actool/bundle/Assets.car">
+      <LogicalName>Assets.car</LogicalName>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
   </ItemGroup>
 </Project>
