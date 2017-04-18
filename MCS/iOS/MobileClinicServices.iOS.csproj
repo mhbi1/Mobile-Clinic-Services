@@ -93,12 +93,36 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-20x20%401x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-20x20%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-20x20%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-29x29%401x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-29x29%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-29x29%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-40x40%401x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-40x40%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-40x40%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-57x57%401x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-57x57%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-60x60%401x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-60x60%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-60x60%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-72x72%401x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-72x72%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-76x76%401x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-76x76%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-76x76%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-83.5x83.5%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-Small-50x50%401x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-Small-50x50%402x.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
     <Folder Include="Resources\Images.xcassets\" />
+    <Folder Include="Assets.xcassets\MobileC.imageset\" />
+    <Folder Include="Assets.xcassets\MCIcon.appiconset\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -163,22 +187,29 @@
     <BundleResource Include="Resources\BubbleIncoming.imageset\bubble_regular.png" />
     <BundleResource Include="Resources\BubbleIncoming.imageset\bubble_regular%402x.png" />
     <BundleResource Include="Resources\BubbleIncoming.imageset\bubble_regular%403x.png" />
-    <BundleResource Include="Resources\AppIcon.appiconset\Contents.json" />
-    <BundleResource Include="Resources\AppIcon.appiconset\Icon-60%402x.png" />
-    <BundleResource Include="Resources\AppIcon.appiconset\Icon-60%403x.png" />
-    <BundleResource Include="Resources\AppIcon.appiconset\Icon-72.png" />
-    <BundleResource Include="Resources\AppIcon.appiconset\Icon-72%402x.png" />
-    <BundleResource Include="Resources\AppIcon.appiconset\Icon-76.png" />
-    <BundleResource Include="Resources\AppIcon.appiconset\Icon-76%402x.png" />
-    <BundleResource Include="Resources\AppIcon.appiconset\Icon-87%403x.png" />
-    <BundleResource Include="Resources\AppIcon.appiconset\Icon-Small-50.png" />
-    <BundleResource Include="Resources\AppIcon.appiconset\Icon-Small-50%402x.png" />
-    <BundleResource Include="Resources\AppIcon.appiconset\Icon-Small.png" />
-    <BundleResource Include="Resources\AppIcon.appiconset\Icon-Small%402x.png" />
-    <BundleResource Include="Resources\AppIcon.appiconset\Icon-Spotlight-40.png" />
-    <BundleResource Include="Resources\AppIcon.appiconset\Icon-Spotlight-40%402x.png" />
-    <BundleResource Include="Resources\AppIcon.appiconset\Icon.png" />
-    <BundleResource Include="Resources\AppIcon.appiconset\Icon%402x.png" />
+    <BundleResource Include="AppIcon.appiconset\Contents.json" />
+    <BundleResource Include="AppIcon.appiconset\Icon-App-20x20%401x.png" />
+    <BundleResource Include="AppIcon.appiconset\Icon-App-20x20%402x.png" />
+    <BundleResource Include="AppIcon.appiconset\Icon-App-20x20%403x.png" />
+    <BundleResource Include="AppIcon.appiconset\Icon-App-29x29%401x.png" />
+    <BundleResource Include="AppIcon.appiconset\Icon-App-29x29%402x.png" />
+    <BundleResource Include="AppIcon.appiconset\Icon-App-29x29%403x.png" />
+    <BundleResource Include="AppIcon.appiconset\Icon-App-40x40%401x.png" />
+    <BundleResource Include="AppIcon.appiconset\Icon-App-40x40%402x.png" />
+    <BundleResource Include="AppIcon.appiconset\Icon-App-40x40%403x.png" />
+    <BundleResource Include="AppIcon.appiconset\Icon-App-57x57%401x.png" />
+    <BundleResource Include="AppIcon.appiconset\Icon-App-57x57%402x.png" />
+    <BundleResource Include="AppIcon.appiconset\Icon-App-60x60%401x.png" />
+    <BundleResource Include="AppIcon.appiconset\Icon-App-60x60%402x.png" />
+    <BundleResource Include="AppIcon.appiconset\Icon-App-60x60%403x.png" />
+    <BundleResource Include="AppIcon.appiconset\Icon-App-72x72%401x.png" />
+    <BundleResource Include="AppIcon.appiconset\Icon-App-72x72%402x.png" />
+    <BundleResource Include="AppIcon.appiconset\Icon-App-76x76%401x.png" />
+    <BundleResource Include="AppIcon.appiconset\Icon-App-76x76%402x.png" />
+    <BundleResource Include="AppIcon.appiconset\Icon-App-76x76%403x.png" />
+    <BundleResource Include="AppIcon.appiconset\Icon-App-83.5x83.5%402x.png" />
+    <BundleResource Include="AppIcon.appiconset\Icon-Small-50x50%401x.png" />
+    <BundleResource Include="AppIcon.appiconset\Icon-Small-50x50%402x.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

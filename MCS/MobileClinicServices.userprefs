@@ -1,12 +1,12 @@
 ﻿<Properties StartupConfiguration="{1702DE90-2C1D-4825-BFCC-4B43FB55802F}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/LaunchScreen.storyboard">
+  <MonoDevelop.Ide.Workbench>
     <Files>
       <File FileName="iOS/SignUpViewController.cs" Line="62" Column="114" />
       <File FileName="iOS/ViewController.cs" Line="46" Column="6" />
       <File FileName="iOS/MainMenuViewController.cs" Line="53" Column="1" />
       <File FileName="iOS/ChatScreenViewController.cs" Line="117" Column="1" />
       <File FileName="iOS/Main.storyboard" />
-      <File FileName="iOS/LaunchScreen.storyboard" />
+      <File FileName="iOS/Info.plist" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
